@@ -1,4 +1,5 @@
 <?php
+    //TUBE QUE VOLVER A HACER LA CONEXIÓN PORQUE NO PUDE JALAR LA CONEXION
     $conexion = mysqli_connect('localhost', 'root', '', 'SENATIDB'); 
 ?>
 

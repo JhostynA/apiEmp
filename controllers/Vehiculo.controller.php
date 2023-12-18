@@ -39,3 +39,11 @@ if (isset($_POST['operacion'])){
     echo json_encode($idobtenido);
   }
 }
+
+if(isset($_GET['operacion'])){
+  $vehiculo = new Vehiculo();
+
+  if($_GET['operacion'] == 'getResumenTipoCombustible'){
+    echo json_encode($vehiculo->getResumenTipoCombustible());
+  }
+}

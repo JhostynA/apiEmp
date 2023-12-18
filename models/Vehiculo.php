@@ -55,6 +55,16 @@ class Vehiculo extends Conexion{
       die($e->getMessage());
     }
   }
+
+  public function getResumenTipoCombustible(){
+    try{
+      $consulta = $this->pdo->prepare("CALL spu_resumen_tipocombustible()");
+      $consulta->execute();
+      return $consulta->fetchAll(PDO::FETCH_ASSOC);
+    }catch(Exception $e){
+      die($e->getMessage());
+    }
+  }
 }
 
 //Prueba - NO OLVIDES BORRAR ESTO

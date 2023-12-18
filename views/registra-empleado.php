@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <title>Title</title>
         <meta charset="utf-8" />
@@ -56,7 +56,7 @@
 
                 <div class="col-md-4 mb-3">
                     <label for="telefono" class="form-label">Telefono</label>
-                    <input type="number" class="form-control text-center" id="telefono">
+                    <input type="cel" class="form-control text-center" id="telefono" maxlength="9">
                 </div>
 
                 <div class="mb-3">

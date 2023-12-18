@@ -1,4 +1,7 @@
 <?php
+
+//TUBE QUE VOLVER A HACER LA CONEXIÓN PORQUE NO PUDE JALAR LA CONEXION
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -6,7 +9,7 @@ $dbname = "SENATIDB";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Realiza una consulta SQL para contar la cantidad de empleados por sede, utiliza LEFT JOIN para incluir sedes incluso si no tienen empleados asociados.
+// Realizo una consulta SQL para contar la cantidad de empleados por sede, utilizando LEFT JOIN para incluir sedes incluso si no tienen empleados asociados.
 $sql = "SELECT sedes.sede, COUNT(empleados.idempleado) as cantidad_personas
         FROM sedes
         LEFT JOIN empleados ON sedes.idsede = empleados.idsede
